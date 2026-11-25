@@ -1,0 +1,44 @@
+name: la_mesa_dorada
+description: "Aplicación móvil para el restaurante La Mesa Dorada - Aplicaciones Móviles B191 (UTS)."
+publish_to: 'none'
+
+version: 1.0.0+13 # 1.0 = versión final (semana 13 del cronograma)
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Manejo de estado (carrito, catálogo, pedidos)
+  provider: ^6.1.2
+
+  # Base de datos local SQLite (Semana 9)
+  sqflite: ^2.3.3
+  path: ^1.9.0
+
+  # Notificaciones push locales (Semanas 7-9)
+  flutter_local_notifications: ^17.2.4
+
+  # Hash de contraseñas del personal de cocina (Semana 10)
+  crypto: ^3.0.3
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Coloca aquí las imágenes exportadas desde Figma.
+  # El nombre del archivo debe coincidir con el "id" del producto/categoría
+  # (ver assets/images/LEEME.md). Si una imagen no existe, la app muestra
+  # automáticamente un recuadro de color con el ícono de la categoría.
+  assets:
+    - assets/images/productos/
+    - assets/images/categorias/
+    - assets/images/slider/
